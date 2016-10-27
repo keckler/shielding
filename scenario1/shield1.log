@@ -1,0 +1,36 @@
+ mcnp     ver=5.mpi, ld=07312014  10/25/16 17:46:01                   
+          Thread Name & Version = MCNP5, 1.60
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+ m3    1000.04p 0.546359                                              
+  warning.  material         3 is used only for a perturbation or tally.                                                 
+ 
+  warning.   FM card uses material         3 cross sections over all of mesh tally         4                             
+  warning.    2 materials had unnormalized fractions. print table 40.                                                    
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+
+                              ctm =        0.00   nrn =                 0
+ dump    1 on file runtpe   nps =           0   coll =                0
+ xact   is done
+
+ cp0 =   0.01
+ master starting      39 tasks with       1 threads each  10/25/16 17:46:01 
+ master sending static commons...
+ master sending dynamic commons...
+ master sending cross section data...
+ master completed initialization broadcasts.
+ master set rendezvous nps =         200    10/25/16 17:46:01 
+ master set rendezvous nps = 10000000000    10/25/16 17:46:02 
+ run terminated when 10000000000  particle histories were done.
+  warning.  random number period exceeded.  decrease stride.                                                             
+
+                              ctm =    55473.07   nrn =     9572630776377
+ dump    2 on file runtpe   nps = 10000000000   coll =     679243489347
+ mcrun  is done
+

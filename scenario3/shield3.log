@@ -1,0 +1,29 @@
+ mcnp     ver=5.mpi, ld=07312014  10/26/16 10:10:11                   
+          Thread Name & Version = MCNP5, 1.60
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+ m3    1000.04p 0.546359                                              
+  warning.  material         3 is used only for a perturbation or tally.                                                 
+ 
+  warning.   FM card uses material         3 cross sections over all of mesh tally         4                             
+  warning.    2 materials had unnormalized fractions. print table 40.                                                    
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+
+                              ctm =        0.00   nrn =                 0
+ dump    1 on file runtpe   nps =           0   coll =                0
+ xact   is done
+
+ cp0 =   0.01
+ master starting      39 tasks with       1 threads each  10/26/16 10:10:11 
+ master sending static commons...
+ master sending dynamic commons...
+ master sending cross section data...
+ master completed initialization broadcasts.
+ master set rendezvous nps =         200    10/26/16 10:10:11 
+ master set rendezvous nps = 10000000000    10/26/16 10:10:12 

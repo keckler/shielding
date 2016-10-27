@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# -----------------------------------------------------------------------------
+# job options
+# -----------------------------------------------------------------------------
+
+# job name
+#SBATCH --job-name=plot
+
+# output name
+#SBATCH --output=plot.log
+
+# wall time, in minutes
+#SBATCH --time=1440
+
+# -----------------------------------------------------------------------------
+# SLURM options
+# -----------------------------------------------------------------------------
+# for a full list of partition, quality of service, and account options, type:
+# sacctmgr -p show associations user=$USER
+
+# account
+#SBATCH --account=co_nuclear
+
+# partition 
+#SBATCH --partition=savio
+
+# quality of service
+#SBATCH --qos=nuclear_normal
+
+# number of nodes
+#SBATCH --nodes=1
+
+# number of tasks on each node, savio has 20 cores per node, savio2 has 24
+#SBATCH --ntasks-per-node=20
+
+# email me
+#SBATCH --mail-type=all
+
+# email address
+#SBATCH --mail-user=keckler@berkeley.edu
+
+# -----------------------------------------------------------------------------
+# job execution
+# -----------------------------------------------------------------------------
+
+matlab -nodesktop -nodisplay -nosplash -r "run('./plotTally.m'); exit;"
