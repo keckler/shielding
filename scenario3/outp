@@ -397,3 +397,96 @@
  warning.  source energy > emax.                                                                                                        
  nps =         198     nrn =                   4 erg = 1.1615E+02                                                                       
  master set rendezvous nps = 10000000000    10/26/16 10:10:12 
+1problem summary                                                                                                           
+
+      run terminated when 10000000000  particle histories were done.
++                                                                                                    10/27/16 11:04:36 
+      xray shielding for S. Makiharju by C. Keckler, Scenario 3, Oct 2016                  probid =  10/26/16 10:10:11 
+0
+ photon creation     tracks      weight        energy            photon loss         tracks      weight        energy
+                                 (per source particle)                                           (per source particle)
+
+ source         10000000000    2.8900E-04    5.5161E+01          escape               97193    2.8089E-09    8.5591E-06
+                                                                 energy cutoff          155    4.4795E-12    1.7153E-03
+                                                                 time cutoff              0    0.            0.        
+ weight window            0    0.            0.                  weight window            0    0.            0.        
+ cell importance          0    0.            0.                  cell importance          0    0.            0.        
+ weight cutoff            0    0.            0.                  weight cutoff            0    0.            0.        
+ e or t importance        0    0.            0.                  e or t importance        0    0.            0.        
+ dxtran                   0    0.            0.                  dxtran                   0    0.            0.        
+ forced collisions        0    0.            0.                  forced collisions        0    0.            0.        
+ exp. transform           0    0.            0.                  exp. transform           0    0.            0.        
+ from neutrons            0    0.            0.                  compton scatter          0    0.            1.8306E+01
+ bremsstrahlung123623832561    3.5727E-03    1.2280E+01          capture       155180428989    4.4847E-03    6.5666E-01
+ p-annihilation 22623007836    6.5380E-04    1.1561E+00          pair production11311503918    3.2690E-04    4.9637E+01
+ photonuclear             0    0.            0.                  photonuclear abs         0    0.            0.        
+ electron x-rays          0    0.            0.                                                                        
+ 1st fluorescenc10245189858    2.9609E-04    3.7620E-03                                                                
+ 2nd fluorescence         0    0.            0.                                                                        
+     total     166492030255    4.8116E-03    6.8602E+01              total     166492030255    4.8116E-03    6.8602E+01
+
+   number of photons banked                217952333        average time of (shakes)              cutoffs
+   photon tracks per source particle      1.6649E+01          escape            9.9679E+00          tco   1.0000E+33
+   photon collisions per source particle  7.8731E+01          capture           9.2764E-01          eco   1.0000E-03
+   total photon collisions              787312614936          capture or escape 9.2765E-01          wc1  -5.0000E-01
+                                                              any termination   9.1972E-01          wc2  -2.5000E-01
+
+ computer time so far in this run 59784.20 minutes            maximum number ever in bank        51
+ computer time in mcrun           56838.59 minutes            bank overflows to backup file       0
+ source particles per minute            1.7594E+05
+ random numbers generated           10984667561624            most random numbers used was       11524 in history  6013592803
+ 
+  warning.  random number period exceeded.  decrease stride.
+
+ range of sampled source weights = 2.8900E-04 to 2.8900E-04
+
+ ******* source particles had energies > emax.
+
+ estimated system efficiency for MPI usage = 98%
+
+ number of histories processed by each MPI task
+           0   256410256   256410256   256410256   256410257   256410256   256410256   256410256   256410258   256410256
+   256410256   256410257   256410256   256410256   256410256   256410257   256410257   256410256   256410257   256410256
+   256410256   256410256   256410257   256410256   256410257   256410257   256410256   256410256   256410256   256410257
+   256410256   256410256   256410258   256410256   256410256   256410256   256410257   256410256   256410256   256410258
+1photon   activity in each cell                                                                         print table 126
+
+                       tracks     population   collisions   collisions     number        flux        average      average
+              cell    entering                               * weight     weighted     weighted   track weight   track mfp
+                                                          (per history)    energy       energy     (relative)      (cm)
+
+        1      100   230860746    651150777   3232806967    9.3428E-05   3.9480E+00   3.9480E+00   2.8900E-04   6.8880E+00
+        2      200   381531447    356641305   1800132028    5.2024E-05   2.1581E-01   2.1581E-01   2.8900E-04   2.9212E+00
+        3      300   694084023    725726346   3569477949    1.0316E-04   1.0688E+00   1.0688E+00   2.8900E-04   4.1502E+00
+        4      400    72656113     70131528    369128197    1.0668E-05   5.1614E-01   5.1614E-01   2.8900E-04   3.7474E+00
+        5       98  2624590218   3043573508  15043864423    4.3477E-04   1.6735E+00   1.6735E+00   2.8900E-04   4.6989E+00
+        6       99   530870830    503286923   2517899256    7.2767E-05   5.1350E-01   5.1350E-01   2.8900E-04   3.6020E+00
+        7      500  1548602328   1466938657   6588861140    1.9042E-04   1.7448E-01   1.7448E-01   2.8900E-04   2.8859E+00
+        8      600 14577657693 148649821665 704412926245    2.0358E-02   5.9724E+00   5.9724E+00   2.8900E-04   6.5118E+00
+        9      700  1787858773   1719747106   8175035561    2.3626E-04   2.0898E-01   2.0898E-01   2.8900E-04   3.0474E+00
+       10      800  1987129551   1832346045   8354819252    2.4145E-04   1.8204E-01   1.8204E-01   2.8900E-04   2.9146E+00
+       11     1000 20816796789  25465843398  33186840362    9.5910E-04   1.2440E+01   1.2440E+01   2.8900E-04   7.5117E+02
+       12     1100    10384760      8213420     31747809    9.1751E-07   4.5688E-01   4.5688E-01   2.8900E-04   3.0152E+02
+       13     1200     3182307      3036617     16644965    4.8104E-07   4.8254E-01   4.8254E-01   2.8900E-04   3.8757E+00
+       14     1300      664917       825487      4578662    1.3232E-07   1.4609E+00   1.4609E+00   2.8900E-04   5.6806E+00
+       15     1400      239848       224752      1008832    2.9155E-08   3.0616E-01   3.0616E-01   2.8900E-04   2.9716E+00
+       16     1500     1196149      1140005      5679252    1.6413E-07   4.4649E-01   4.4649E-01   2.8900E-04   3.6523E+00
+       17     1600      242898       230932      1164036    3.3641E-08   3.7332E-01   3.7332E-01   2.8900E-04   3.5249E+00
+
+           total   45268549390 184498878471 787312614936    2.2753E-02
+
+ Mesh tallies written to file meshtal
+
+ ***********************************************************************************************************************
+
+ dump no.    2 on file runtpe     nps = 10000000000     coll =   787312614936     ctm =    56838.59   nrn =   
+ 10984667561624
+
+         4 warning messages so far.
+
+
+ run terminated when 10000000000  particle histories were done.
+
+ computer time =59784.21 minutes
+
+ mcnp     version 5.mpi 07312014                     10/27/16 11:04:37                     probid =  10/26/16 10:10:11 

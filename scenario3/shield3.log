@@ -27,3 +27,10 @@
  master completed initialization broadcasts.
  master set rendezvous nps =         200    10/26/16 10:10:11 
  master set rendezvous nps = 10000000000    10/26/16 10:10:12 
+ run terminated when 10000000000  particle histories were done.
+  warning.  random number period exceeded.  decrease stride.                                                             
+
+                              ctm =    56838.59   nrn =    10984667561624
+ dump    2 on file runtpe   nps = 10000000000   coll =     787312614936
+ mcrun  is done
+
