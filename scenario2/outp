@@ -27,8 +27,8 @@
   | PRIVATELY OWNED RIGHTS.                                             |
   +---------------------------------------------------------------------+
   
-1mcnp     version 5.mpi ld=07312014                     10/25/16 22:40:58 
- *************************************************************************                 probid =  10/25/16 22:40:58 
+1mcnp     version 5.mpi ld=07312014                     10/28/16 15:57:27 
+ *************************************************************************                 probid =  10/28/16 15:57:27 
  i=inp                                                                           
 
          1-       xray shielding for S. Makiharju by C. Keckler, Scenario 2, Oct 2016             
@@ -242,7 +242,7 @@
        208-            12000.04p 0.036358                                                         
        209-            17000.04p 0.000172                                                         
        210-       FMESH4:P IMESH=25.40 JMESH=1854.454 KMESH=1620.52                               
-       211-                ORIGIN=-2500.0 -25.40 -25.40                                           
+       211-                ORIGIN=-3500.0 -25.40 -25.40                                           
        212-                IINTS=122 JINTS=62 KINTS=36 $one mesh every cubic foot                 
        213-       FM4 9593.09 3 -5 -6 $should give a tally with units of rad/s, see calcs on pg 5 
        214-       C                                                                               
@@ -336,12 +336,12 @@
 
  ***********************************************************************************************************************
 
- dump no.    1 on file runtpe     nps =           0     coll =              0     ctm =        0.00   nrn =             
+ dump no.    1 on file runtpf     nps =           0     coll =              0     ctm =        0.00   nrn =             
     0
 
          3 warning messages so far.
- master starting      39 tasks with       1 threads each  10/25/16 22:40:58 
- master set rendezvous nps =         200    10/25/16 22:40:58 
+ master starting      39 tasks with       1 threads each  10/28/16 15:57:28 
+ master set rendezvous nps =         200    10/28/16 15:57:28 
  warning.  source energy > emax.                                                                                                        
  nps =           1     nrn =                   4 erg = 1.1477E+02                                                                       
  warning.  source energy > emax.                                                                                                        
@@ -396,12 +396,12 @@
  nps =         179     nrn =                   4 erg = 1.3157E+02                                                                       
  warning.  source energy > emax.                                                                                                        
  nps =         198     nrn =                   4 erg = 1.1615E+02                                                                       
- master set rendezvous nps = 10000000000    10/25/16 22:40:59 
+ master set rendezvous nps = 10000000000    10/28/16 15:57:28 
 1problem summary                                                                                                           
 
       run terminated when 10000000000  particle histories were done.
-+                                                                                                    10/27/16 02:41:05 
-      xray shielding for S. Makiharju by C. Keckler, Scenario 2, Oct 2016                  probid =  10/25/16 22:40:58 
++                                                                                                    10/29/16 19:15:55 
+      xray shielding for S. Makiharju by C. Keckler, Scenario 2, Oct 2016                  probid =  10/28/16 15:57:27 
 0
  photon creation     tracks      weight        energy            photon loss         tracks      weight        energy
                                  (per source particle)                                           (per source particle)
@@ -431,9 +431,9 @@
    total photon collisions              756114914264          capture or escape 3.0676E+00          wc1  -5.0000E-01
                                                               any termination   3.0217E+00          wc2  -2.5000E-01
 
- computer time so far in this run 67213.24 minutes            maximum number ever in bank        49
- computer time in mcrun           63983.80 minutes            bank overflows to backup file       0
- source particles per minute            1.5629E+05
+ computer time so far in this run 65546.16 minutes            maximum number ever in bank        49
+ computer time in mcrun           62694.98 minutes            bank overflows to backup file       0
+ source particles per minute            1.5950E+05
  random numbers generated           10648700010450            most random numbers used was       10652 in history  4300575962
  
   warning.  random number period exceeded.  decrease stride.
@@ -442,7 +442,7 @@
 
  ******* source particles had energies > emax.
 
- estimated system efficiency for MPI usage =102%
+ estimated system efficiency for MPI usage = 98%
 
  number of histories processed by each MPI task
            0   256410256   256410256   256410256   256410257   256410256   256410256   256410256   256410258   256410256
@@ -475,11 +475,11 @@
 
            total   98753050581 210905463436 756114914264    2.1852E-02
 
- Mesh tallies written to file meshtal
+ Mesh tallies written to file meshtam
 
  ***********************************************************************************************************************
 
- dump no.    2 on file runtpe     nps = 10000000000     coll =   756114914264     ctm =    63983.80   nrn =   
+ dump no.    2 on file runtpf     nps = 10000000000     coll =   756114914264     ctm =    62694.98   nrn =   
  10648700010450
 
          4 warning messages so far.
@@ -487,6 +487,6 @@
 
  run terminated when 10000000000  particle histories were done.
 
- computer time =67213.26 minutes
+ computer time =65546.18 minutes
 
- mcnp     version 5.mpi 07312014                     10/27/16 02:41:06                     probid =  10/25/16 22:40:58 
+ mcnp     version 5.mpi 07312014                     10/29/16 19:15:56                     probid =  10/28/16 15:57:27 

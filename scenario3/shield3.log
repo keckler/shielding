@@ -1,4 +1,5 @@
- mcnp     ver=5.mpi, ld=07312014  10/26/16 10:10:11                   
+ mcnp     ver=5.mpi, ld=07312014  10/28/16 15:57:46                   
+ outp already exists.  outq is created instead.
           Thread Name & Version = MCNP5, 1.60
           Copyright LANS/LANL/DOE - see output file
                                   _                                      
@@ -14,23 +15,25 @@
  comment. using random number generator  1, initial seed = 19073486328125      
  imcn   is done
 
+ runtpe already exists.  runtpf is created instead.
 
                               ctm =        0.00   nrn =                 0
- dump    1 on file runtpe   nps =           0   coll =                0
+ dump    1 on file runtpf   nps =           0   coll =                0
  xact   is done
 
  cp0 =   0.01
- master starting      39 tasks with       1 threads each  10/26/16 10:10:11 
+ master starting      39 tasks with       1 threads each  10/28/16 15:57:46 
  master sending static commons...
  master sending dynamic commons...
  master sending cross section data...
  master completed initialization broadcasts.
- master set rendezvous nps =         200    10/26/16 10:10:11 
- master set rendezvous nps = 10000000000    10/26/16 10:10:12 
+ master set rendezvous nps =         200    10/28/16 15:57:46 
+ master set rendezvous nps = 10000000000    10/28/16 15:57:47 
  run terminated when 10000000000  particle histories were done.
   warning.  random number period exceeded.  decrease stride.                                                             
+ meshtal already exists.  meshtam is created instead.
 
-                              ctm =    56838.59   nrn =    10984667561624
- dump    2 on file runtpe   nps = 10000000000   coll =     787312614936
+                              ctm =    56636.38   nrn =    10984667561624
+ dump    2 on file runtpf   nps = 10000000000   coll =     787312614936
  mcrun  is done
 
