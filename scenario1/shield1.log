@@ -1,4 +1,4 @@
- mcnp     ver=5.mpi, ld=07312014  10/25/16 17:46:01                   
+ mcnp     ver=5.mpi, ld=07312014  10/31/16 10:00:09                   
           Thread Name & Version = MCNP5, 1.60
           Copyright LANS/LANL/DOE - see output file
                                   _                                      
@@ -20,17 +20,17 @@
  xact   is done
 
  cp0 =   0.01
- master starting      39 tasks with       1 threads each  10/25/16 17:46:01 
+ master starting      39 tasks with       1 threads each  10/31/16 10:00:09 
  master sending static commons...
  master sending dynamic commons...
  master sending cross section data...
  master completed initialization broadcasts.
- master set rendezvous nps =         200    10/25/16 17:46:01 
- master set rendezvous nps = 10000000000    10/25/16 17:46:02 
+ master set rendezvous nps =         200    10/31/16 10:00:09 
+ master set rendezvous nps = 10000000000    10/31/16 10:00:10 
  run terminated when 10000000000  particle histories were done.
   warning.  random number period exceeded.  decrease stride.                                                             
 
-                              ctm =    55473.07   nrn =     9572630776377
- dump    2 on file runtpe   nps = 10000000000   coll =     679243489347
+                              ctm =     4871.32   nrn =      683015487252
+ dump    2 on file runtpe   nps = 10000000000   coll =      47193791017
  mcrun  is done
 
