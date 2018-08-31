@@ -17,17 +17,16 @@ C ceiling of basement
 99 1 -2.300  19 -8 14 -15 16 -17 IMP:P=1
 C
 C east block
-500 1 -2.300  20 -21 12 -22 18 -23 IMP:P=1
+500 1 -2.300  20 -21 221 -22 18 -23 IMP:P=1
 C
 C west block
-600 1 -2.300  30 -31 32 -34 18 -23 IMP:P=1 $long part
-700 1 -2.300  31 -20 33 -34 18 -23 IMP:P=1 $nub
+600 3 -11.350 30 -31 12 -34 18 -35 IMP:P=1
 C
 C HFNG shielding
-800 1 -2.300  18 -45 20 -11 33 -44 IMP:P=1 $currently modeled as a large block, UPDATE
+800 1 -2.300  18 -45 20 -11 22 -44 IMP:P=1 $currently modeled as a large block, UPDATE
 C
 C empty space in basement
-1000 2 0.001225  10 -11 12 -13 18 -19 #500 #600 #700 #800 IMP:P=1 $UPDATE (if changing HFNG to explicit geometry)
+1000 2 0.001225  10 -11 12 -13 18 -19 #500 #600 #800 IMP:P=1
 C
 C rooms above basement, completely empty (no walls, nothing)
 1100 2 0.001225  10 -11 12 -13 8 -7 IMP:P=1
@@ -69,18 +68,19 @@ C
 C shielding blocks
 20 px -624.84 $eastern block, west face
 21 px -533.40 $eastern block, east face
-22 py  457.20 $eastern block, north face
-23 pz  365.76 $top of block, 12 ft (4 blocks high)
-30 px -807.72 $western block, west face
-31 px -716.28 $western block, east face
-32 py 259.08 $western block, southern-most south face, surf 33 minus 12 ft
-33 py 624.84 $western block, northern-most south face, ignoring chamfered corner
-34 py 716.28 $western block, north face, 3 ft added to surf 33
+22 py  624.84 $eastern block, north face
+221 py 157.48 $eastern block, south face
+23 pz  365.76 $top of eastern block
+30 px -744.22 $western block, west face
+31 px -739.14 $western block, east face
+C use surf 12 for western block, south face
+34 py  335.28 $western block, north face
+35 pz  208.28 $top of western block
 C
 C HFNG walls
 C use surf 20 for western wall
 C use surf 11 for eastern wall
-C use surf 33 for south wall
+C use surf 22 for south wall
 44 py 1109.08 $north wall, 850cm north of south wall
 45 pz  625.16 $top of structure, 246.125 in
 C use surf 18 for bottom of structure
@@ -104,6 +104,8 @@ C air, taken from engineering toolbox
 M2    8000.04p 20.95
       7000.04p 78.09
      18000.04p  0.93
+C lead, taken from PNNL-15870 Rev 1
+M3   82000.04p 1.0
 C ------------------------------------------------------------------------------
 C source
 C ------------------------------------------------------------------------------
