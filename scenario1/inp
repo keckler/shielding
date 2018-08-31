@@ -217,7 +217,7 @@ C tallies
 C ------------------------------------------------------------------------------
 C
 C tally material, Tissue Equivalent, MS20, taken from PNNL-15870 Rev 1
-M3    1000.04p 0.546359
+M4    1000.04p 0.546359
       6000.04p 0.329480
       7000.04p 0.008619
       8000.04p 0.079013
@@ -226,7 +226,7 @@ M3    1000.04p 0.546359
 FMESH4:P IMESH=25.40 JMESH=1854.454 KMESH=1620.52
          ORIGIN=-2500.0 -25.40 -25.40
          IINTS=122 JINTS=62 KINTS=36 $one mesh every cubic foot
-FM4 9593.09 3 -5 -6 $should give a tally with units of rad/s, see calcs on pg 5
+FM4 9593.09 4 -5 -6 $should give a tally with units of rad/s, see calcs on pg 5
 C
 C ------------------------------------------------------------------------------
 C problem type
