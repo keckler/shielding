@@ -1,4 +1,5 @@
- mcnp     ver=5.mpi, ld=07312014  10/31/16 10:00:31                   
+ mcnp     ver=5    , ld=09282010  08/31/18 15:26:00                   
+ outp already exists.  outq is created instead.
           Thread Name & Version = MCNP5, 1.60
           Copyright LANS/LANL/DOE - see output file
                                   _                                      
@@ -6,31 +7,243 @@
             | | |  (_  | |  |_)   _)                                     
                             |                                            
   
- m3    1000.04p 0.546359                                              
-  warning.  material         3 is used only for a perturbation or tally.                                                 
+ m4    1000.04p 0.546359                                              
+  warning.  material         4 is used only for a perturbation or tally.                                                 
  
-  warning.   FM card uses material         3 cross sections over all of mesh tally         4                             
+  warning.   FM card uses material         4 cross sections over all of mesh tally         4                             
   warning.    2 materials had unnormalized fractions. print table 40.                                                    
  comment. using random number generator  1, initial seed = 19073486328125      
  imcn   is done
 
+ runtpe already exists.  runtpf is created instead.
+  warning.  material        3 has been set to a conductor.                                                               
 
                               ctm =        0.00   nrn =                 0
- dump    1 on file runtpe   nps =           0   coll =                0
+ dump    1 on file runtpf   nps =           0   coll =                0
  xact   is done
 
  cp0 =   0.01
- master starting      39 tasks with       1 threads each  10/31/16 10:00:31 
- master sending static commons...
- master sending dynamic commons...
- master sending cross section data...
- master completed initialization broadcasts.
- master set rendezvous nps =         200    10/31/16 10:00:31 
- master set rendezvous nps = 10000000000    10/31/16 10:00:32 
+
+                              ctm =       60.01   nrn =        8756312477
+ dump    2 on file runtpf   nps =   138811375   coll =        604490213
+
+                              ctm =      120.03   nrn =       17500108277
+ dump    3 on file runtpf   nps =   277431559   coll =       1208128051
+
+                              ctm =      180.04   nrn =       26235589628
+ dump    4 on file runtpf   nps =   415921956   coll =       1811177867
+
+                              ctm =      240.04   nrn =       34955870505
+ dump    5 on file runtpf   nps =   554169299   coll =       2413175158
+
+                              ctm =      300.05   nrn =       43674413111
+ dump    6 on file runtpf   nps =   692379073   coll =       3015058576
+
+                              ctm =      360.06   nrn =       52422221413
+ dump    7 on file runtpf   nps =   831078099   coll =       3618971910
+
+                              ctm =      420.06   nrn =       61159951109
+ dump    8 on file runtpf   nps =   969612976   coll =       4222200056
+
+                              ctm =      480.07   nrn =       69884800401
+ dump    9 on file runtpf   nps =  1107938552   coll =       4824526026
+
+                              ctm =      540.08   nrn =       78616005953
+ dump   10 on file runtpf   nps =  1246366188   coll =       5427295217
+
+                              ctm =      600.09   nrn =       87344148872
+ dump   11 on file runtpf   nps =  1384750325   coll =       6029856254
+
+                              ctm =      660.10   nrn =       96053301708
+ dump   12 on file runtpf   nps =  1522833942   coll =       6631103774
+
+                              ctm =      720.10   nrn =      104769013588
+ dump   13 on file runtpf   nps =  1661012799   coll =       7232802493
+
+                              ctm =      780.12   nrn =      113488423792
+ dump   14 on file runtpf   nps =  1799246620   coll =       7834759877
+
+                              ctm =      840.13   nrn =      122214219026
+ dump   15 on file runtpf   nps =  1937585542   coll =       8437142063
+
+                              ctm =      900.14   nrn =      130928032464
+ dump   16 on file runtpf   nps =  2075722157   coll =       9038703358
+
+                              ctm =      960.15   nrn =      139634884515
+ dump   17 on file runtpf   nps =  2213762249   coll =       9639795658
+
+                              ctm =     1020.15   nrn =      148343613854
+ dump   18 on file runtpf   nps =  2351821256   coll =      10241015918
+
+                              ctm =     1080.17   nrn =      157058606385
+ dump   19 on file runtpf   nps =  2489981526   coll =      10842662895
+
+                              ctm =     1140.18   nrn =      165777792266
+ dump   20 on file runtpf   nps =  2628211155   coll =      11444595444
+
+                              ctm =     1200.18   nrn =      174501771556
+ dump   21 on file runtpf   nps =  2766514825   coll =      12046855029
+
+                              ctm =     1260.19   nrn =      183220243796
+ dump   22 on file runtpf   nps =  2904736885   coll =      12648744562
+
+                              ctm =     1320.19   nrn =      191923919901
+ dump   23 on file runtpf   nps =  3042720225   coll =      13249615246
+
+                              ctm =     1380.20   nrn =      200643556729
+ dump   24 on file runtpf   nps =  3180959770   coll =      13851579549
+
+                              ctm =     1440.21   nrn =      209411989266
+ dump   25 on file runtpf   nps =  3319985286   coll =      14456916502
+
+                              ctm =     1500.22   nrn =      218180803850
+ dump   26 on file runtpf   nps =  3459001202   coll =      15062266464
+
+                              ctm =     1560.22   nrn =      226944022723
+ dump   27 on file runtpf   nps =  3597926986   coll =      15667250360
+
+                              ctm =     1620.22   nrn =      235705684847
+ dump   28 on file runtpf   nps =  3736835630   coll =      16272125591
+
+                              ctm =     1680.22   nrn =      244463760627
+ dump   29 on file runtpf   nps =  3875686248   coll =      16876742997
+
+                              ctm =     1740.23   nrn =      253215601890
+ dump   30 on file runtpf   nps =  4014435512   coll =      17480927901
+
+                              ctm =     1800.23   nrn =      261968960492
+ dump   31 on file runtpf   nps =  4153197132   coll =      18085221410
+
+                              ctm =     1860.24   nrn =      270726256993
+ dump   32 on file runtpf   nps =  4292046858   coll =      18689788083
+
+                              ctm =     1920.25   nrn =      279486081848
+ dump   33 on file runtpf   nps =  4430909633   coll =      19294533636
+
+                              ctm =     1980.26   nrn =      288251001453
+ dump   34 on file runtpf   nps =  4569863980   coll =      19899611803
+
+                              ctm =     2040.26   nrn =      297004817235
+ dump   35 on file runtpf   nps =  4708637262   coll =      20503933537
+
+                              ctm =     2100.27   nrn =      305772128288
+ dump   36 on file runtpf   nps =  4847614096   coll =      21109178684
+
+                              ctm =     2160.27   nrn =      314539201199
+ dump   37 on file runtpf   nps =  4986604997   coll =      21714416608
+
+                              ctm =     2220.29   nrn =      323305124000
+ dump   38 on file runtpf   nps =  5125569882   coll =      22319581704
+
+                              ctm =     2280.30   nrn =      332056008877
+ dump   39 on file runtpf   nps =  5264312754   coll =      22923708399
+
+                              ctm =     2340.31   nrn =      340816197766
+ dump   40 on file runtpf   nps =  5403177679   coll =      23528479278
+
+                              ctm =     2400.32   nrn =      349573174810
+ dump   41 on file runtpf   nps =  5542011881   coll =      24133018571
+
+                              ctm =     2460.32   nrn =      358330938481
+ dump   42 on file runtpf   nps =  5680853962   coll =      24737623761
+
+                              ctm =     2520.32   nrn =      367099156263
+ dump   43 on file runtpf   nps =  5819859048   coll =      25342934582
+
+                              ctm =     2580.34   nrn =      375863125359
+ dump   44 on file runtpf   nps =  5958796619   coll =      25947959032
+
+                              ctm =     2640.34   nrn =      384614645712
+ dump   45 on file runtpf   nps =  6097548502   coll =      26552125987
+
+                              ctm =     2700.35   nrn =      393380835246
+ dump   46 on file runtpf   nps =  6236537231   coll =      27157300796
+
+                              ctm =     2760.37   nrn =      402151117397
+ dump   47 on file runtpf   nps =  6375573460   coll =      27762766893
+
+                              ctm =     2820.38   nrn =      410918854821
+ dump   48 on file runtpf   nps =  6514580811   coll =      28368051673
+
+                              ctm =     2880.39   nrn =      419677795262
+ dump   49 on file runtpf   nps =  6653440504   coll =      28972730470
+
+                              ctm =     2940.40   nrn =      428434832494
+ dump   50 on file runtpf   nps =  6792266270   coll =      29577266460
+
+                              ctm =     3000.41   nrn =      437184892327
+ dump   51 on file runtpf   nps =  6930980593   coll =      30181334546
+
+                              ctm =     3060.42   nrn =      445951940231
+ dump   52 on file runtpf   nps =  7069967802   coll =      30786570223
+
+                              ctm =     3120.43   nrn =      454723850425
+ dump   53 on file runtpf   nps =  7209040089   coll =      31392150870
+
+                              ctm =     3180.44   nrn =      463491795241
+ dump   54 on file runtpf   nps =  7348043116   coll =      31997455103
+
+                              ctm =     3240.45   nrn =      472254215589
+ dump   55 on file runtpf   nps =  7486975400   coll =      32602388940
+
+                              ctm =     3300.46   nrn =      481010614375
+ dump   56 on file runtpf   nps =  7625796581   coll =      33206905107
+
+                              ctm =     3360.47   nrn =      489761999269
+ dump   57 on file runtpf   nps =  7764543110   coll =      33811067891
+
+                              ctm =     3420.48   nrn =      498511059795
+ dump   58 on file runtpf   nps =  7903252528   coll =      34415070315
+
+                              ctm =     3480.48   nrn =      507279479250
+ dump   59 on file runtpf   nps =  8042273373   coll =      35020403853
+
+                              ctm =     3540.50   nrn =      516054660012
+ dump   60 on file runtpf   nps =  8181377958   coll =      35626199292
+
+                              ctm =     3600.51   nrn =      524822148441
+ dump   61 on file runtpf   nps =  8320373428   coll =      36231467328
+
+                              ctm =     3660.51   nrn =      533577614913
+ dump   62 on file runtpf   nps =  8459180903   coll =      36835905832
+
+                              ctm =     3720.51   nrn =      542338468091
+ dump   63 on file runtpf   nps =  8598067494   coll =      37440715985
+
+                              ctm =     3780.52   nrn =      551091696879
+ dump   64 on file runtpf   nps =  8736840642   coll =      38045005889
+
+                              ctm =     3840.54   nrn =      559852574320
+ dump   65 on file runtpf   nps =  8875732179   coll =      38649817654
+
+                              ctm =     3900.55   nrn =      568608973936
+ dump   66 on file runtpf   nps =  9014549587   coll =      39254328709
+
+                              ctm =     3960.55   nrn =      577376869210
+ dump   67 on file runtpf   nps =  9153562723   coll =      39859619391
+
+                              ctm =     4020.55   nrn =      586143511576
+ dump   68 on file runtpf   nps =  9292542460   coll =      40464830038
+
+                              ctm =     4080.57   nrn =      594900773616
+ dump   69 on file runtpf   nps =  9431372068   coll =      41069388530
+
+                              ctm =     4140.58   nrn =      603635551436
+ dump   70 on file runtpf   nps =  9569852565   coll =      41672407161
+
+                              ctm =     4200.59   nrn =      612367760908
+ dump   71 on file runtpf   nps =  9708291828   coll =      42275231712
+
+                              ctm =     4260.59   nrn =      621099618067
+ dump   72 on file runtpf   nps =  9846727366   coll =      42878042611
+
+                              ctm =     4320.60   nrn =      629830569467
+ dump   73 on file runtpf   nps =  9985159288   coll =      43480785845
  run terminated when 10000000000  particle histories were done.
   warning.  random number period exceeded.  decrease stride.                                                             
+ meshtal already exists.  meshtam is created instead.
 
-                              ctm =     4462.96   nrn =      628189128368
- dump    2 on file runtpe   nps = 10000000000   coll =      43358681582
+                              ctm =     4327.04   nrn =      630766627137
+ dump   74 on file runtpf   nps = 10000000000   coll =      43545406452
  mcrun  is done
 
