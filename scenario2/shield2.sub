@@ -11,7 +11,7 @@
 #SBATCH --output=shield2.log
 
 # wall time, in minutes
-#SBATCH --time=2000
+#SBATCH --time=20000
 
 # -----------------------------------------------------------------------------
 # SLURM options
@@ -26,13 +26,13 @@
 #SBATCH --partition=savio
 
 # quality of service
-#SBATCH --qos=nuclear_normal
+#SBATCH --qos=nuclear_savio_normal
 
 # number of nodes
-#SBATCH --nodes=2
+#SBATCH --nodes=1
 
 # number of tasks on each node, savio has 20 cores per node, savio2 has 24
-#SBATCH --ntasks-per-node=20
+#SBATCH --ntasks-per-node=1
 
 # email me
 #SBATCH --mail-type=all
@@ -44,4 +44,4 @@
 # job execution
 # -----------------------------------------------------------------------------
 
-mpirun mcnp5.mpi i=inp
+/global/home/groups/co_nuclear/MCNP/MCNP_CODE/bin/mcnp5 i=inp
