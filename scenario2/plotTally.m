@@ -9,16 +9,16 @@ tallyFile = './meshtal';
 %shielding block coordinates
 EBWF = -624.84;
 EBEF = -533.40;
-EBNF = 457.20;
-EBSF = 0.0;
+EBNF = 624.84;
+EBSF = 157.48;
+EBTF = 365.74;
 
-WBWF = -807.72;
-WBEF = -716.28;
-WBSF1 = 259.08;
-WBSF2 = 624.84;
-WBNF = 716.28;
+WBWF = -744.22;
+WBEF = -739.14;
+WBSF = 0.0;
+WBNF = 335.28;
+WBTF = 208.28
 
-shieldTop = 365.76;
 shieldBottom = 0.0;
 
 hfngWF = -624.84;
@@ -102,7 +102,7 @@ axis([-3684 26 -26 1855 -26 1621])
 xlabel('x (cm)')
 ylabel('y (cm)')
 zlabel('z (cm)')
-title('contour of dose to human tissue from X-ray machine in scenario 2 (mrad/hr)');
+title('contour of dose to human tissue from X-ray machine in scenario 1 (mrad/hr)');
 colorbar('eastoutside', 'FontSize', 11, 'YTick', log(contourLineValues), 'YTickLabel', contourLineValues)
 daspect([1,1,1]) %keep the aspect ratio the same on all sides
 campos([0.4737E4, -1.4684E4, 1.3768E4]) %set the camera position
@@ -113,28 +113,20 @@ box on; grid on;
 hold on;
 
 %east shield block
-fill3([EBWF, EBWF, EBWF, EBWF], [EBSF, EBNF, EBNF, EBSF], [shieldBottom, shieldBottom, shieldTop, shieldTop], 'c'); %east block, west face
-fill3([EBEF, EBEF, EBEF, EBEF], [EBSF, EBNF, EBNF, EBSF], [shieldBottom, shieldBottom, shieldTop, shieldTop], 'c'); %east block, east face
-fill3([EBEF, EBEF, EBWF, EBWF], [EBNF, EBNF, EBNF, EBNF], [shieldBottom, shieldTop, shieldTop, shieldBottom], 'c'); %east block, south face
-fill3([EBEF, EBEF, EBWF, EBWF], [EBSF, EBSF, EBSF, EBSF], [shieldBottom, shieldTop, shieldTop, shieldBottom], 'c'); %east block, north face
-fill3([EBEF, EBEF, EBWF, EBWF], [EBSF, EBNF, EBNF, EBSF], [shieldTop, shieldTop, shieldTop, shieldTop], 'c'); %east block, top
+fill3([EBWF, EBWF, EBWF, EBWF], [EBSF, EBNF, EBNF, EBSF], [shieldBottom, shieldBottom, EBTF, EBTF], 'c'); %east block, west face
+fill3([EBEF, EBEF, EBEF, EBEF], [EBSF, EBNF, EBNF, EBSF], [shieldBottom, shieldBottom, EBTF, EBTF], 'c'); %east block, east face
+fill3([EBEF, EBEF, EBWF, EBWF], [EBNF, EBNF, EBNF, EBNF], [shieldBottom, EBTF, EBTF, shieldBottom], 'c'); %east block, south face
+fill3([EBEF, EBEF, EBWF, EBWF], [EBSF, EBSF, EBSF, EBSF], [shieldBottom, EBTF, EBTF, shieldBottom], 'c'); %east block, north face
+fill3([EBEF, EBEF, EBWF, EBWF], [EBSF, EBNF, EBNF, EBSF], [EBTF, EBTF, EBTF, EBTF], 'c'); %east block, top
 fill3([EBEF, EBEF, EBWF, EBWF], [EBSF, EBNF, EBNF, EBSF], [shieldBottom, shieldBottom, shieldBottom, shieldBottom], 'c'); %east block, bottom
 
-%west shield block, long portion
-fill3([WBWF, WBWF, WBWF, WBWF], [WBSF1, WBNF, WBNF, WBSF1], [shieldBottom, shieldBottom, shieldTop, shieldTop], 'c');
-fill3([WBEF, WBEF, WBEF, WBEF], [WBSF1, WBNF, WBNF, WBSF1], [shieldBottom, shieldBottom, shieldTop, shieldTop], 'c');
-fill3([WBEF, WBEF, WBWF, WBWF], [WBSF1, WBSF1, WBSF1, WBSF1], [shieldBottom, shieldTop, shieldTop, shieldBottom], 'c');
-fill3([WBEF, WBEF, WBWF, WBWF], [WBNF, WBNF, WBNF, WBNF], [shieldBottom, shieldTop, shieldTop, shieldBottom], 'c');
-fill3([WBEF, WBEF, WBWF, WBWF], [WBSF1, WBNF, WBNF, WBSF1], [shieldTop, shieldTop, shieldTop, shieldTop], 'c');
-fill3([WBEF, WBEF, WBWF, WBWF], [WBSF1, WBNF, WBNF, WBSF1], [shieldBottom, shieldBottom, shieldBottom, shieldBottom], 'c');
-
-%west shield block, nub
-fill3([hfngWF, hfngWF, hfngWF, hfngWF], [WBSF2, WBNF, WBNF, WBSF2], [shieldBottom, shieldBottom, shieldTop, shieldTop], 'c');
-fill3([WBEF, WBEF, WBEF, WBEF], [WBSF2, WBNF, WBNF, WBSF2], [shieldBottom, shieldBottom, shieldTop, shieldTop], 'c');
-fill3([hfngWF, hfngWF, WBEF, WBEF], [WBSF2, WBSF2, WBSF2, WBSF2], [shieldBottom, shieldTop, shieldTop, shieldBottom], 'c');
-fill3([hfngWF, hfngWF, WBEF, WBEF], [WBNF, WBNF, WBNF, WBNF], [shieldBottom, shieldTop, shieldTop, shieldBottom], 'c');
-fill3([hfngWF, hfngWF, WBEF, WBEF], [WBSF2, WBNF, WBNF, WBSF2], [shieldTop, shieldTop, shieldTop, shieldTop], 'c');
-fill3([hfngWF, hfngWF, WBEF, WBEF], [WBSF2, WBNF, WBNF, WBSF2], [shieldBottom, shieldBottom, shieldBottom, shieldBottom], 'c');
+%west shield block
+fill3([WBWF, WBWF, WBWF, WBWF], [WBSF, WBNF, WBNF, WBSF], [shieldBottom, shieldBottom, WBTF, WBTF], 'c');
+fill3([WBEF, WBEF, WBEF, WBEF], [WBSF, WBNF, WBNF, WBSF], [shieldBottom, shieldBottom, WBTF, WBTF], 'c');
+fill3([WBEF, WBEF, WBWF, WBWF], [WBSF, WBSF, WBSF, WBSF], [shieldBottom, WBTF, WBTF, shieldBottom], 'c');
+fill3([WBEF, WBEF, WBWF, WBWF], [WBNF, WBNF, WBNF, WBNF], [shieldBottom, WBTF, WBTF, shieldBottom], 'c');
+fill3([WBEF, WBEF, WBWF, WBWF], [WBSF, WBNF, WBNF, WBSF], [WBTF, WBTF, WBTF, WBTF], 'c');
+fill3([WBEF, WBEF, WBWF, WBWF], [WBSF, WBNF, WBNF, WBSF], [shieldBottom, shieldBottom, shieldBottom, shieldBottom], 'c');
 
 %hfng
 fill3([hfngEF, hfngEF, hfngEF, hfngEF], [hfngSF, hfngNF, hfngNF, hfngSF], [hfngBottom, hfngBottom, hfngTop, hfngTop], 'c');
