@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# -----------------------------------------------------------------------------
+# job options
+# -----------------------------------------------------------------------------
+
+# job name
+#SBATCH --job-name=shield4
+
+# output name
+#SBATCH --output=shield4.log
+
+# wall time, in minutes
+#SBATCH --time=20000
+
+# -----------------------------------------------------------------------------
+# SLURM options
+# -----------------------------------------------------------------------------
+# for a full list of partition, quality of service, and account options, type:
+# sacctmgr -p show associations user=$USER
+
+# account
+#SBATCH --account=co_nuclear
+
+# partition 
+#SBATCH --partition=savio
+
+# quality of service
+#SBATCH --qos=nuclear_savio_normal
+
+# number of nodes
+#SBATCH --nodes=1
+
+# number of tasks on each node, savio has 20 cores per node, savio2 has 24
+#SBATCH --ntasks-per-node=1
+
+# email me
+#SBATCH --mail-type=all
+
+# email address
+#SBATCH --mail-user=keckler@berkeley.edu
+
+# -----------------------------------------------------------------------------
+# job execution
+# -----------------------------------------------------------------------------
+
+/global/home/groups/co_nuclear/MCNP/MCNP_CODE/bin/mcnp5 i=inp
